@@ -7,7 +7,7 @@
 [Script]
 # script-path 换成你自己托管这个 js 的地址（GitHub raw / Gist 都行），
 # 想本地调试就把文件名填成 wopay-token.js 并放进 Loon 的脚本目录
-http-response ^https?://epay\.10010\.com/ script-path=https://raw.githubusercontent.com/USER/REPO/main/wopay-token.js, requires-body=true, timeout=10, tag=沃钱包凭证采集, enable=true
+http-response ^https?://epay\.10010\.com/ script-path=https://raw.githubusercontent.com/CNL123/epay/refs/heads/main/wopay-token.js, requires-body=true, timeout=10, tag=沃钱包凭证采集, enable=true
 
 [MITM]
 hostname = %APPEND% epay.10010.com
